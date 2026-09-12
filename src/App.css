@@ -1276,17 +1276,17 @@ html {
   /* Music - диск НИЖЧЕ */
   .music-vinyl-container {
     width: 350px !important;
-    top: 35% !important;
-    /* ОПУЩЕНО НИЖЧЕ (було 20%) */
+    top: 45% !important;
+    /* ОПУЩЕНО ЩЕ НИЖЧЕ (було 35%) */
   }
 
-  /* Стрічка з піснями - МЕНША ВИСОТА */
+  /* Стрічка з піснями - ОПИСАНО ВНИЗ */
   .music-ribbon-container {
-    bottom: 0px !important;
+    bottom: -50px !important;
+    /* ОПИСАНО ВНИЗ (було 0px) */
     left: 0;
     width: 100%;
     height: 300px !important;
-    /* ЗМЕНШЕНО (було 500px) */
     z-index: 20;
   }
 
@@ -1307,9 +1307,9 @@ html {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr !important;
-    gap: 20px !important;
-    /* ЗМЕНШЕНО (було 30px) */
-    padding: 25px 20px !important;
+    gap: 15px !important;
+    /* ЗМЕНШЕНО ДЛЯ КОМПАКТНОСТІ */
+    padding: 15px 10px !important;
     /* ЗМЕНШЕНО */
     max-width: 600px !important;
   }
@@ -1317,24 +1317,24 @@ html {
   .music-song {
     width: auto !important;
     min-width: auto !important;
-    padding: 12px 15px !important;
+    padding: 8px 10px !important;
     /* ЗМЕНШЕНО */
   }
 
   .song-number {
-    font-size: 18px !important;
-    /* ЗМЕНШЕНО */
-    min-width: 30px !important;
+    font-size: 14px !important;
+    /* ЗРОБЛЕНО МЕНШИМ */
+    min-width: 25px !important;
   }
 
   .song-title {
-    font-size: 14px !important;
-    /* ЗМЕНШЕНО */
+    font-size: 11px !important;
+    /* ЗРОБЛЕНО МЕНШИМ */
   }
 
   .song-artist {
-    font-size: 12px !important;
-    /* ЗМЕНШЕНО */
+    font-size: 10px !important;
+    /* ЗРОБЛЕНО МЕНШИМ */
   }
 
   .footer-content {
@@ -1393,19 +1393,19 @@ html {
   }
 
   .music-playlist {
-    gap: 15px !important;
-    padding: 20px 15px !important;
+    gap: 10px !important;
+    padding: 10px !important;
   }
 
   .song-number {
-    font-size: 16px !important;
+    font-size: 12px !important;
   }
 
   .song-title {
-    font-size: 13px !important;
+    font-size: 10px !important;
   }
 
   .song-artist {
-    font-size: 11px !important;
+    font-size: 9px !important;
   }
 }
