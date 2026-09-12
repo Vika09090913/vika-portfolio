@@ -286,75 +286,6 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-  .photo-left {
-    top: 2%;
-    left: 10%;
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .photo-center {
-    top: 20%;
-    left: 35%;
-    width: 180px !important;
-    height: 220px !important;
-  }
-
-  .photo-right {
-    top: 40%;
-    left: 50%;
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .search-container {
-    top: 15px;
-    left: 20px;
-    width: 240px;
-  }
-
-  .search-wrapper {
-    padding: 10px 15px;
-  }
-
-  .search-input {
-    font-size: 13px;
-  }
-
-  .dropdown-item {
-    padding: 10px 12px;
-    font-size: 13px;
-  }
-
-  .social-icon {
-    width: 55px;
-    height: 55px;
-  }
-
-  .social-snapchat {
-    top: 80px;
-    left: 120px;
-  }
-
-  .social-instagram {
-    top: 150px;
-    left: 200px;
-  }
-
-  .social-whatsapp {
-    top: 220px;
-    left: 280px;
-  }
-
-  .about-photo-container {
-    width: 600px !important;
-    height: 650px !important;
-    top: 20px !important;
-    left: 50px !important;
-  }
-}
-
 .xoxo-container {
   position: absolute;
   bottom: 100px;
@@ -506,18 +437,6 @@ html {
 
   .tweety-image {
     width: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heart-emoji {
-    bottom: 150px;
-    left: 80px;
-    font-size: 28px;
-  }
-
-  .tweety-image {
-    width: 200px;
   }
 }
 
@@ -686,33 +605,6 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-
-  .envelope-closed,
-  .envelope-opened {
-    bottom: 60px;
-    right: 60px;
-    width: 380px !important;
-  }
-
-  .hobby-card {
-    bottom: 60px;
-    right: 60px;
-    width: 380px !important;
-  }
-
-  .hobby-nav-btn {
-    width: 45px;
-    height: 45px;
-    font-size: 1.3rem;
-  }
-
-  .hobby-indicator {
-    bottom: 35px;
-    right: 60px;
-  }
-}
-
 .section-favourites {
   overflow: hidden;
 }
@@ -728,12 +620,6 @@ html {
 }
 
 @media (max-width: 1024px) {
-  .favourites-background-layer {
-    background-size: cover;
-  }
-}
-
-@media (max-width: 768px) {
   .favourites-background-layer {
     background-size: cover;
   }
@@ -816,26 +702,6 @@ html {
 
   50% {
     opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-bear {
-    width: 300px !important;
-    top: 50px !important;
-    left: 20px !important;
-  }
-
-  .skills-buttons {
-    width: 200px !important;
-    right: -50px !important;
-    top: 40% !important;
-  }
-
-  .skills-composite {
-    width: 100% !important;
-    max-width: 100% !important;
-    top: 55% !important;
   }
 }
 
@@ -952,46 +818,6 @@ html {
 @media (max-width: 1024px) {
   .music-vinyl-container {
     width: 600px;
-  }
-}
-
-@media (max-width: 768px) {
-  .music-vinyl-container {
-    width: 380px !important;
-    top: 40% !important;
-  }
-
-  .music-ribbon-container {
-    bottom: -100px !important;
-  }
-
-  .music-ribbon {
-    transform: scale(3.5) !important;
-  }
-
-  .music-playlist {
-    width: 90% !important;
-    left: 5% !important;
-    top: -50% !important;
-    padding: 10px;
-    gap: 5px !important;
-  }
-
-  .song-number {
-    font-size: 13px !important;
-    min-width: 25px !important;
-  }
-
-  .song-title {
-    font-size: 12px !important;
-  }
-
-  .song-artist {
-    font-size: 11px !important;
-  }
-
-  .music-song {
-    padding: 6px 10px !important;
   }
 }
 
@@ -1281,7 +1107,13 @@ html {
   }
 }
 
+/* ============================================
+    МОБІЛЬНА ВЕРСІЯ - ГОРИЗОНТАЛЬНИЙ СКРОЛ
+   ============================================ */
+
 @media (max-width: 768px) {
+
+  /* Головна - горизонтальний скрол */
   .section-home {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -1289,7 +1121,7 @@ html {
   }
 
   .background-layer {
-    width: 1200px !important;
+    width: 1400px !important;
     min-height: 100vh !important;
     position: relative;
   }
@@ -1310,18 +1142,18 @@ html {
   }
 
   .social-snapchat {
-    top: 60px !important;
-    left: 270px !important;
+    top: 30px !important;
+    left: 250px !important;
   }
 
   .social-instagram {
-    top: 130px !important;
-    left: 350px !important;
+    top: 135px !important;
+    left: 380px !important;
   }
 
   .social-whatsapp {
-    top: 220px !important;
-    left: 315px !important;
+    top: 260px !important;
+    left: 450px !important;
   }
 
   .my-photo {
@@ -1329,6 +1161,7 @@ html {
     height: auto !important;
   }
 
+  /* About Me - горизонтальний скрол */
   .section-about {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -1336,22 +1169,135 @@ html {
   }
 
   .about-background-layer {
-    width: 1200px !important;
+    width: 1400px !important;
     min-height: 100vh !important;
     position: relative;
   }
 
-  .about-title {
-    font-size: 80px !important;
+  .about-photo-container {
+    width: 650px !important;
+    height: 700px !important;
+    top: -120px !important;
+    left: 10px !important;
+  }
+
+  .heart-emoji {
+    font-size: 36px !important;
     bottom: 100px !important;
-    left: 50px !important;
+    left: 800px !important;
+    top: auto !important;
   }
 
   .character-trigger {
     display: block !important;
     font-size: 36px !important;
-    bottom: 100px !important;
+    bottom: 120px !important;
     right: 180px !important;
+  }
+
+  /* Hobbies */
+  .envelope-closed,
+  .envelope-opened {
+    right: 100px !important;
+    width: 500px !important;
+    bottom: 100px !important;
+  }
+
+  .hobby-card {
+    width: 500px !important;
+    right: 100px !important;
+    bottom: 100px !important;
+    left: auto !important;
+  }
+
+  .hobby-image {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+
+  .hobby-nav-btn {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 2rem !important;
+  }
+
+  .hobby-indicator {
+    bottom: 60px !important;
+    right: 100px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  /* Skills - ведмідь менший */
+  .skills-bear {
+    width: 120px !important;
+    top: 30px !important;
+    left: 30px !important;
+  }
+
+  .skills-buttons {
+    width: 180px !important;
+    right: 30px !important;
+  }
+
+  .skills-composite {
+    width: 60% !important;
+    height: auto !important;
+    max-height: none !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  /* Music */
+  .music-vinyl-container {
+    width: 700px !important;
+    top: 15% !important;
+  }
+
+  .music-ribbon-container {
+    bottom: -100px !important;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .music-ribbon {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+
+  .music-playlist {
+    width: 95% !important;
+    left: 45% !important;
+    top: 40% !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 40px !important;
+    padding: 20px 40px !important;
+  }
+
+  .music-song {
+    width: auto !important;
+    min-width: auto !important;
+    padding: 12px 15px !important;
+  }
+
+  .song-number {
+    font-size: 22px !important;
+    min-width: 35px !important;
+  }
+
+  .song-title {
+    font-size: 18px !important;
+  }
+
+  .song-artist {
+    font-size: 16px !important;
   }
 
   .footer-content {
@@ -1370,7 +1316,7 @@ html {
   .background-layer::after,
   .about-background-layer::after {
     content: '← Swipe →';
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -1397,15 +1343,11 @@ html {
 }
 
 @media (max-width: 400px) {
-  .my-photo {
+  .skills-bear {
     width: 80px !important;
   }
 
-  .music-vinyl-container {
-    width: 250px !important;
-  }
-
-  .music-song {
-    min-width: 48% !important;
+  .skills-buttons {
+    width: 50px !important;
   }
 }
