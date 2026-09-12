@@ -290,19 +290,22 @@ html {
   .photo-left {
     top: 2%;
     left: 10%;
-    width: 130px;
+    width: 200px !important;
+    height: 200px !important;
   }
 
   .photo-center {
     top: 20%;
     left: 35%;
-    width: 150px;
+    width: 180px !important;
+    height: 220px !important;
   }
 
   .photo-right {
     top: 40%;
     left: 50%;
-    width: 170px;
+    width: 200px !important;
+    height: 200px !important;
   }
 
   .search-container {
@@ -345,10 +348,10 @@ html {
   }
 
   .about-photo-container {
-    width: 320px;
-    height: 360px;
-    top: 20px;
-    left: 30px;
+    width: 600px !important;
+    height: 650px !important;
+    top: 20px !important;
+    left: 50px !important;
   }
 }
 
@@ -689,13 +692,13 @@ html {
   .envelope-opened {
     bottom: 60px;
     right: 60px;
-    width: 300px;
+    width: 380px !important;
   }
 
   .hobby-card {
     bottom: 60px;
     right: 60px;
-    width: 300px;
+    width: 380px !important;
   }
 
   .hobby-nav-btn {
@@ -818,18 +821,21 @@ html {
 
 @media (max-width: 768px) {
   .skills-bear {
-    width: 100px;
-    top: 20px;
-    left: 20px;
+    width: 300px !important;
+    top: 50px !important;
+    left: 20px !important;
   }
 
   .skills-buttons {
-    width: 60px;
-    right: 20px;
+    width: 200px !important;
+    right: -50px !important;
+    top: 40% !important;
   }
 
   .skills-composite {
-    max-width: 90%;
+    width: 100% !important;
+    max-width: 100% !important;
+    top: 55% !important;
   }
 }
 
@@ -951,31 +957,41 @@ html {
 
 @media (max-width: 768px) {
   .music-vinyl-container {
-    width: 500px;
-    top: 10%;
+    width: 380px !important;
+    top: 40% !important;
+  }
+
+  .music-ribbon-container {
+    bottom: -100px !important;
+  }
+
+  .music-ribbon {
+    transform: scale(3.5) !important;
   }
 
   .music-playlist {
-    width: 90%;
+    width: 90% !important;
+    left: 5% !important;
+    top: -50% !important;
     padding: 10px;
-    gap: 10px 20px;
+    gap: 5px !important;
   }
 
   .song-number {
-    font-size: 16px;
-    min-width: 28px;
+    font-size: 13px !important;
+    min-width: 25px !important;
   }
 
   .song-title {
-    font-size: 14px;
+    font-size: 12px !important;
   }
 
   .song-artist {
-    font-size: 12px;
+    font-size: 11px !important;
   }
 
   .music-song {
-    padding: 8px 10px;
+    padding: 6px 10px !important;
   }
 }
 
@@ -1313,26 +1329,6 @@ html {
     height: auto !important;
   }
 
-  .photo-left {
-    top: 3% !important;
-    left: 61% !important;
-    height: 245px !important;
-    width: 265px !important;
-  }
-
-  .photo-center {
-    top: 2% !important;
-    left: 73% !important;
-    height: 237px !important;
-    width: 250px !important;
-  }
-
-  .photo-right {
-    top: 6% !important;
-    left: 83% !important;
-    width: 250px !important;
-  }
-
   .section-about {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -1345,24 +1341,10 @@ html {
     position: relative;
   }
 
-  .about-photo-container {
-    width: 490px !important;
-    height: 540px !important;
-    top: -80px !important;
-    left: 10px !important;
-  }
-
   .about-title {
     font-size: 80px !important;
     bottom: 100px !important;
     left: 50px !important;
-  }
-
-  .heart-emoji {
-    font-size: 36px !important;
-    bottom: 150px !important;
-    left: 620px !important;
-    top: auto !important;
   }
 
   .character-trigger {
@@ -1370,117 +1352,6 @@ html {
     font-size: 36px !important;
     bottom: 100px !important;
     right: 180px !important;
-  }
-
-  .envelope-closed,
-  .envelope-opened {
-    right: 10px !important;
-    width: 280px !important;
-    bottom: 80px !important;
-  }
-
-  .hobby-card {
-    width: 300px !important;
-    right: 10px !important;
-    bottom: 80px !important;
-    left: auto !important;
-  }
-
-  .hobby-image {
-    width: 100% !important;
-    max-width: 280px !important;
-  }
-
-  .hobby-nav-btn {
-    width: 45px !important;
-    height: 45px !important;
-    font-size: 1.2rem !important;
-  }
-
-  .hobby-indicator {
-    bottom: 40px !important;
-    right: 10px !important;
-    left: auto !important;
-    transform: none !important;
-  }
-
-  .indicator-dot {
-    width: 10px !important;
-    height: 10px !important;
-  }
-
-  .indicator-dot.active {
-    width: 25px !important;
-  }
-
-  .skills-bear {
-    width: 120px !important;
-    top: 15px !important;
-    left: 15px !important;
-  }
-
-  .skills-buttons {
-    width: 180px !important;
-    right: -70px !important;
-  }
-
-  .skills-composite {
-    width: 95% !important;
-    height: auto !important;
-    max-height: none !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .music-vinyl-container {
-    width: 350px !important;
-    top: 32% !important;
-  }
-
-  .music-ribbon-container {
-    bottom: -80px !important;
-    left: 0;
-    width: 100%;
-    z-index: 20;
-  }
-
-  .music-ribbon {
-    width: 100% !important;
-    height: 100px !important;
-    display: block;
-    opacity: 1 !important;
-    transform: scale(3.3) !important;
-  }
-
-  .music-playlist {
-    width: 90% !important;
-    left: 5% !important;
-    top: -45% !important;
-    transform: translateY(-50%) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: nowrap !important;
-    gap: 5px !important;
-    padding: 10px !important;
-  }
-
-  .music-song {
-    width: 100% !important;
-    min-width: auto !important;
-    padding: 6px 10px !important;
-  }
-
-  .song-number {
-    font-size: 13px !important;
-    min-width: 25px !important;
-  }
-
-  .song-title {
-    font-size: 12px !important;
-  }
-
-  .song-artist {
-    font-size: 11px !important;
   }
 
   .footer-content {
@@ -1536,18 +1407,5 @@ html {
 
   .music-song {
     min-width: 48% !important;
-  }
-
-  .skills-bear {
-    width: 80px !important;
-  }
-
-  .skills-buttons {
-    width: 50px !important;
-  }
-
-  .skills-composite {
-    max-width: 95% !important;
-    max-height: 65vh !important;
   }
 }
