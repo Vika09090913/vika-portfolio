@@ -230,7 +230,7 @@ html {
 
 .social-whatsapp {
   top: 260px;
-  left: 345px;
+  left: 500px;
 }
 
 @media (max-width: 1024px) {
@@ -355,7 +355,7 @@ html {
 .xoxo-container {
   position: absolute;
   bottom: 100px;
-  right: 100px;
+  right: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -414,7 +414,7 @@ html {
 .heart-emoji {
   position: absolute;
   bottom: 100px;
-  left: 150px;
+  left: 850px;
   font-size: 36px;
   cursor: pointer;
   display: inline-block;
@@ -422,7 +422,6 @@ html {
   filter: drop-shadow(0 2px 4px rgba(255, 105, 180, 0.3));
   animation: heartBeat 1.5s ease-in-out infinite;
   z-index: 30;
-  left: 710px;
   top: 75%;
 }
 
@@ -509,7 +508,7 @@ html {
 
 @media (max-width: 768px) {
   .heart-emoji {
-    bottom: 60px;
+    bottom: 150px;
     left: 80px;
     font-size: 28px;
   }
@@ -1361,7 +1360,7 @@ html {
 
   .heart-emoji {
     font-size: 36px !important;
-    bottom: 77px !important;
+    bottom: 150px !important;
     left: 620px !important;
     top: auto !important;
   }
