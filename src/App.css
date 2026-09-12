@@ -169,7 +169,6 @@ html {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -239,45 +238,37 @@ html {
     left: 45%;
     width: 170px;
   }
-
   .photo-center {
     top: 2%;
     left: 58%;
     width: 180px;
   }
-
   .photo-right {
     top: 5%;
     left: 70%;
     width: 210px;
   }
-
   .search-container {
     top: 20px;
     left: 400px;
     width: 280px;
   }
-
   .social-icon {
     width: 65px;
     height: 65px;
   }
-
   .social-snapchat {
     top: 100px;
     left: 150px;
   }
-
   .social-instagram {
     top: 180px;
     left: 260px;
   }
-
   .social-whatsapp {
     top: 260px;
     left: 350px;
   }
-
   .about-photo-container {
     width: 450px;
     height: 500px;
@@ -322,27 +313,11 @@ html {
 }
 
 @keyframes heartBeatAnimation {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(1.3);
-  }
-
-  20% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.3);
-  }
-
-  40% {
-    transform: scale(1);
-  }
+  0%, 100% { transform: scale(1); }
+  10% { transform: scale(1.3); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.3); }
+  40% { transform: scale(1); }
 }
 
 .heart-emoji {
@@ -364,27 +339,11 @@ html {
 }
 
 @keyframes heartBeat {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(1.2);
-  }
-
-  20% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.2);
-  }
-
-  40% {
-    transform: scale(1);
-  }
+  0%, 100% { transform: scale(1); }
+  10% { transform: scale(1.2); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.2); }
+  40% { transform: scale(1); }
 }
 
 .tweety-popup {
@@ -409,7 +368,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -417,15 +375,8 @@ html {
 }
 
 @keyframes tweetyFloat {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 @media (max-width: 1024px) {
@@ -434,7 +385,6 @@ html {
     left: 100px;
     font-size: 32px;
   }
-
   .tweety-image {
     width: 250px;
   }
@@ -487,7 +437,6 @@ html {
     transform: scale(0.8) rotate(5deg);
     opacity: 0;
   }
-
   to {
     transform: scale(1) rotate(0deg);
     opacity: 1;
@@ -512,7 +461,6 @@ html {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -579,26 +527,22 @@ html {
 }
 
 @media (max-width: 1024px) {
-
   .envelope-closed,
   .envelope-opened {
     bottom: 80px;
     right: 80px;
     width: 400px;
   }
-
   .hobby-card {
     bottom: 80px;
     right: 80px;
     width: 400px;
   }
-
   .hobby-nav-btn {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-
   .hobby-indicator {
     bottom: 50px;
     right: 80px;
@@ -674,7 +618,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.9);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -694,15 +637,8 @@ html {
 }
 
 @keyframes hintPulse {
-
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 1;
-  }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
 .section-music {
@@ -838,15 +774,8 @@ html {
 }
 
 @keyframes characterPulse {
-
-  0%,
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-
-  50% {
-    transform: scale(1.15) rotate(10deg);
-  }
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(10deg); }
 }
 
 .new-character-popup {
@@ -871,7 +800,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3) rotate(-180deg);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -879,19 +807,9 @@ html {
 }
 
 @keyframes newCharacterFloat {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  25% {
-    transform: translateY(-15px) rotate(-5deg);
-  }
-
-  75% {
-    transform: translateY(-15px) rotate(5deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-15px) rotate(-5deg); }
+  75% { transform: translateY(-15px) rotate(5deg); }
 }
 
 .site-footer {
@@ -922,15 +840,8 @@ html {
 }
 
 @keyframes floatHeart {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(10deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(10deg); }
 }
 
 .footer-content {
@@ -968,15 +879,8 @@ html {
 }
 
 @keyframes bearBounce {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(-5deg);
-  }
-
-  50% {
-    transform: translateY(-8px) rotate(-5deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-8px) rotate(-5deg); }
 }
 
 .heart-emoji {
@@ -984,15 +888,8 @@ html {
 }
 
 @keyframes heartPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
 .footer-text {
@@ -1014,15 +911,8 @@ html {
 }
 
 @keyframes footerHeartPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.3);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
 }
 
 .footer-copy {
@@ -1066,45 +956,18 @@ html {
   .new-character-image {
     width: 200px;
   }
-
   .footer-content {
     flex-direction: column;
     gap: 20px;
   }
-
-  .footer-emojis {
-    order: 1;
-  }
-
-  .footer-text {
-    order: 2;
-  }
-
-  .footer-socials {
-    order: 3;
-  }
-
-  .footer-emoji {
-    font-size: 35px;
-  }
-
-  .footer-made {
-    font-size: 14px;
-  }
-
-  .footer-copy {
-    font-size: 11px;
-  }
-
-  .footer-social-link {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer-social-link img {
-    width: 24px;
-    height: 24px;
-  }
+  .footer-emojis { order: 1; }
+  .footer-text { order: 2; }
+  .footer-socials { order: 3; }
+  .footer-emoji { font-size: 35px; }
+  .footer-made { font-size: 14px; }
+  .footer-copy { font-size: 11px; }
+  .footer-social-link { width: 40px; height: 40px; }
+  .footer-social-link img { width: 24px; height: 24px; }
 }
 
 /* ============================================
@@ -1112,20 +975,17 @@ html {
    ============================================ */
 
 @media (max-width: 768px) {
-
   /* Головна - горизонтальний скрол */
   .section-home {
     overflow-x: auto !important;
     overflow-y: hidden !important;
     -webkit-overflow-scrolling: touch;
   }
-
   .background-layer {
     width: 1400px !important;
     min-height: 100vh !important;
     position: relative;
   }
-
   .search-container {
     position: fixed !important;
     top: 15px !important;
@@ -1135,30 +995,29 @@ html {
     max-width: 320px !important;
     z-index: 1000 !important;
   }
-
   .social-icon {
     width: 60px !important;
     height: 60px !important;
   }
+  .social-snapchat { top: 30px !important; left: 250px !important; }
+  .social-instagram { top: 135px !important; left: 380px !important; }
+  .social-whatsapp { top: 260px !important; left: 450px !important; }
+  .my-photo { width: auto !important; height: auto !important; }
 
-  .social-snapchat {
-    top: 30px !important;
-    left: 250px !important;
+  /* Фото менші щоб не закривали одна одну */
+  .photo-left {
+    width: 180px !important;
+    height: 200px !important;
+    left: 61% !important;
   }
-
-  .social-instagram {
-    top: 135px !important;
-    left: 380px !important;
+  .photo-center {
+    width: 160px !important;
+    height: 180px !important;
+    left: 73% !important;
   }
-
-  .social-whatsapp {
-    top: 260px !important;
-    left: 450px !important;
-  }
-
-  .my-photo {
-    width: auto !important;
-    height: auto !important;
+  .photo-right {
+    width: 160px !important;
+    left: 83% !important;
   }
 
   /* About Me - горизонтальний скрол */
@@ -1167,13 +1026,11 @@ html {
     overflow-y: hidden !important;
     -webkit-overflow-scrolling: touch;
   }
-
   .about-background-layer {
     width: 1400px !important;
     min-height: 100vh !important;
     position: relative;
   }
-
   .about-photo-container {
     width: 650px !important;
     height: 700px !important;
@@ -1181,10 +1038,11 @@ html {
     left: 10px !important;
   }
 
+  /* Сердечко - вище і лівіше */
   .heart-emoji {
     font-size: 36px !important;
-    bottom: 100px !important;
-    left: 800px !important;
+    bottom: 150px !important;
+    left: 700px !important;
     top: auto !important;
   }
 
@@ -1195,72 +1053,64 @@ html {
     right: 180px !important;
   }
 
-  /* Hobbies */
+  /* Hobbies - конверт правіше */
   .envelope-closed,
   .envelope-opened {
-    right: 100px !important;
-    width: 500px !important;
+    right: 50px !important;
+    width: 400px !important;
     bottom: 100px !important;
   }
-
   .hobby-card {
-    width: 500px !important;
-    right: 100px !important;
+    width: 400px !important;
+    right: 50px !important;
     bottom: 100px !important;
     left: auto !important;
   }
-
   .hobby-image {
     width: 100% !important;
-    max-width: 500px !important;
+    max-width: 400px !important;
   }
-
   .hobby-nav-btn {
     width: 60px !important;
     height: 60px !important;
     font-size: 2rem !important;
   }
-
   .hobby-indicator {
     bottom: 60px !important;
-    right: 100px !important;
+    right: 50px !important;
     left: auto !important;
     transform: none !important;
   }
 
-  /* Skills - ведмідь менший */
+  /* Skills - все трохи більше */
   .skills-bear {
-    width: 120px !important;
+    width: 150px !important;
     top: 30px !important;
     left: 30px !important;
   }
-
   .skills-buttons {
-    width: 180px !important;
+    width: 220px !important;
     right: 30px !important;
   }
-
   .skills-composite {
-    width: 60% !important;
+    width: 70% !important;
     height: auto !important;
     max-height: none !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
 
-  /* Music */
+  /* Music - диск менше */
   .music-vinyl-container {
-    width: 700px !important;
+    width: 500px !important;
     top: 15% !important;
   }
-
   .music-ribbon-container {
     bottom: -100px !important;
     left: 0;
     width: 100%;
     z-index: 20;
   }
-
   .music-ribbon {
     width: 100% !important;
     height: auto !important;
@@ -1268,7 +1118,6 @@ html {
     opacity: 1 !important;
     transform: scale(1) !important;
   }
-
   .music-playlist {
     width: 95% !important;
     left: 45% !important;
@@ -1280,38 +1129,18 @@ html {
     gap: 40px !important;
     padding: 20px 40px !important;
   }
-
   .music-song {
     width: auto !important;
     min-width: auto !important;
     padding: 12px 15px !important;
   }
+  .song-number { font-size: 22px !important; min-width: 35px !important; }
+  .song-title { font-size: 18px !important; }
+  .song-artist { font-size: 16px !important; }
 
-  .song-number {
-    font-size: 22px !important;
-    min-width: 35px !important;
-  }
-
-  .song-title {
-    font-size: 18px !important;
-  }
-
-  .song-artist {
-    font-size: 16px !important;
-  }
-
-  .footer-content {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .footer-emojis {
-    justify-content: center;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
+  .footer-content { flex-direction: column !important; text-align: center; }
+  .footer-emojis { justify-content: center; }
+  .footer-socials { justify-content: center; }
 
   .background-layer::after,
   .about-background-layer::after {
@@ -1328,26 +1157,12 @@ html {
   }
 
   @keyframes swipeHint {
-
-    0%,
-    100% {
-      opacity: 0.4;
-      transform: translateX(-50%);
-    }
-
-    50% {
-      opacity: 1;
-      transform: translateX(-40%);
-    }
+    0%, 100% { opacity: 0.4; transform: translateX(-50%); }
+    50% { opacity: 1; transform: translateX(-40%); }
   }
 }
 
 @media (max-width: 400px) {
-  .skills-bear {
-    width: 80px !important;
-  }
-
-  .skills-buttons {
-    width: 50px !important;
-  }
+  .skills-bear { width: 80px !important; }
+  .skills-buttons { width: 50px !important; }
 }
