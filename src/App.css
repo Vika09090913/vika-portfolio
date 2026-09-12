@@ -999,24 +999,24 @@ html {
     width: 60px !important;
     height: 60px !important;
   }
-  .social-snapchat { top: 30px !important; left: 250px !important; }
-  .social-instagram { top: 135px !important; left: 380px !important; }
-  .social-whatsapp { top: 260px !important; left: 450px !important; }
+  .social-snapchat { top: 30px !important; left: 200px !important; }
+  .social-instagram { top: 135px !important; left: 320px !important; }
+  .social-whatsapp { top: 260px !important; left: 380px !important; }
   .my-photo { width: auto !important; height: auto !important; }
 
-  /* Фото менші щоб не закривали одна одну */
+  /* Фото трохи більші */
   .photo-left {
-    width: 180px !important;
-    height: 200px !important;
+    width: 200px !important;
+    height: 220px !important;
     left: 61% !important;
   }
   .photo-center {
-    width: 160px !important;
-    height: 180px !important;
+    width: 180px !important;
+    height: 200px !important;
     left: 73% !important;
   }
   .photo-right {
-    width: 160px !important;
+    width: 180px !important;
     left: 83% !important;
   }
 
@@ -1100,43 +1100,50 @@ html {
     transform: translate(-50%, -50%) !important;
   }
 
-  /* Music - диск менше */
+  /* Music - диск ще менше */
   .music-vinyl-container {
-    width: 500px !important;
-    top: 15% !important;
+    width: 400px !important;
+    top: 10% !important;
   }
+
+  /* Стрічка з піснями - ПІДНЯТИ ВИЩЕ */
   .music-ribbon-container {
-    bottom: -100px !important;
+    bottom: 50px !important;
     left: 0;
     width: 100%;
     z-index: 20;
   }
+
   .music-ribbon {
     width: 100% !important;
     height: auto !important;
     display: block;
     opacity: 1 !important;
-    transform: scale(1) !important;
+    transform: scale(1.5) !important;
   }
+
+  /* Плейлист на стрічці */
   .music-playlist {
     width: 95% !important;
-    left: 45% !important;
-    top: 40% !important;
+    left: 50% !important;
+    top: 50% !important;
     transform: translate(-50%, -50%) !important;
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
-    gap: 40px !important;
-    padding: 20px 40px !important;
+    gap: 20px !important;
+    padding: 15px 20px !important;
   }
+
   .music-song {
     width: auto !important;
     min-width: auto !important;
-    padding: 12px 15px !important;
+    padding: 8px 12px !important;
   }
-  .song-number { font-size: 22px !important; min-width: 35px !important; }
-  .song-title { font-size: 18px !important; }
-  .song-artist { font-size: 16px !important; }
+
+  .song-number { font-size: 16px !important; min-width: 25px !important; }
+  .song-title { font-size: 14px !important; }
+  .song-artist { font-size: 12px !important; }
 
   .footer-content { flex-direction: column !important; text-align: center; }
   .footer-emojis { justify-content: center; }
