@@ -18,11 +18,3 @@ My personal portfolio website, showcasing my learning journey, React projects, a
 
 ## 🚀 Live Demo
 🔗 [[View portfolio](https://vika-portfolio.vercel.app/)](link to Vercel)
-
-## 📦 Installation
-```bash
-git clone https://github.com/Vika09090913/vika-portfolio.git
-cd vika-portfolio
-npm install
-npm run dev
-```
