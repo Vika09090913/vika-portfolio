@@ -676,7 +676,6 @@ html {
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
-/* ДЕСКТОП - стрічка нижча щоб було видно диск */
 .music-ribbon-container {
   position: absolute;
   bottom: -50px;
@@ -694,7 +693,6 @@ html {
   object-fit: cover;
 }
 
-/* ДЕСКТОП - всі 4 пісні в рядок */
 .music-playlist {
   position: absolute;
   top: 50%;
@@ -710,7 +708,6 @@ html {
   padding: 20px 40px;
 }
 
-/* ДЕСКТОП - фон тільки при натисканні */
 .music-song {
   display: flex;
   align-items: center;
@@ -730,7 +727,6 @@ html {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* Тільки активна пісня має білий фон */
 .music-song.active {
   background: rgba(255, 255, 255, 0.35);
   border: 2px solid rgba(255, 255, 255, 0.6);
@@ -1100,15 +1096,14 @@ html {
     transform: none !important;
   }
 
-  /* Skills - все трохи більше */
+  /* Skills - ведмедик є, пуговички ПРИБРАНО */
   .skills-bear {
     width: 150px !important;
     top: 30px !important;
     left: 30px !important;
   }
   .skills-buttons {
-    width: 220px !important;
-    right: 30px !important;
+    display: none !important; /* ПРИБРАНО ПУГОВИЧКИ */
   }
   .skills-composite {
     width: 70% !important;
@@ -1118,18 +1113,18 @@ html {
     transform: translate(-50%, -50%) !important;
   }
 
-  /* Music - диск НИЖЧЕ */
+  /* Music - диск НИЖЧЕ (анімація збережена) */
   .music-vinyl-container {
     width: 350px !important;
     top: 45% !important;
   }
 
-  /* МОБІЛЬНА - стрічка ще нижча */
+  /* МОБІЛЬНА - стрічка ЩЕ НИЖЧЕ */
   .music-ribbon-container {
-    bottom: -80px !important;
+    bottom: -120px !important; /* ОПУСТИЛИ ЩЕ НИЖЧЕ (було -80px) */
     left: 0;
     width: 100%;
-    height: 200px !important;
+    height: 220px !important;
     z-index: 20;
   }
 
@@ -1141,11 +1136,11 @@ html {
     object-fit: cover !important;
   }
 
-  /* МОБІЛЬНА - плейлист 2x2 */
+  /* МОБІЛЬНА - плейлист ПІДНЯТО ВИЩЕ щоб всі 4 пісні було видно */
   .music-playlist {
     width: 95% !important;
     left: 50% !important;
-    top: 50% !important;
+    top: 30% !important; /* ПІДНЯЛИ ВИЩЕ (було 50%) */
     transform: translate(-50%, -50%) !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -1158,7 +1153,7 @@ html {
   .music-song {
     width: auto !important;
     min-width: auto !important;
-    padding: 8px 10px !important;
+    padding: 10px 12px !important;
     background: transparent !important;
   }
 
@@ -1173,7 +1168,7 @@ html {
   }
 
   .song-title {
-    font-size: 11px !important;
+    font-size: 12px !important;
   }
 
   .song-artist {
@@ -1209,12 +1204,13 @@ html {
 
 @media (max-width: 400px) {
   .skills-bear { width: 80px !important; }
-  .skills-buttons { width: 50px !important; }
+  .skills-buttons { display: none !important; }
   .music-vinyl-container { width: 280px !important; }
-  .music-ribbon-container { height: 150px !important; }
+  .music-ribbon-container { height: 180px !important; bottom: -100px !important; }
   .music-playlist {
     gap: 8px !important;
     padding: 8px !important;
+    top: 25% !important;
   }
   .song-number { font-size: 12px !important; }
   .song-title { font-size: 10px !important; }
