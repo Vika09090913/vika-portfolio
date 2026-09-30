@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
-import backgroundImage from './images/background.jpg';
 import aboutBackground from './images/about-background.jpg';
 import aboutPhoto from './images/about-photo.jpg';
 import photo1 from './images/photo1.jpg';
@@ -25,6 +24,14 @@ import musicBackground from './images/music-background.jpg';
 import musicVinyl from './images/music-vinyl.png';
 import musicRibbon from './images/music-ribbon.png';
 import newCharacterImage from './images/new-character.png';
+
+// Фони для мобільної версії (перший - рожевий, другий - бежевий)
+import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg'; // Рожеве з бейджиком
+import mobileHomePart2Bg from './images/mobile-home-part2-bg.jpg'; // Бежеве з VIKA
+
+// Елементи для першої частини (рожевої)
+import badgeImage from './images/badge.png';
+import girlFlowersImage from './images/girl-flowers.png';
 
 function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -79,7 +86,6 @@ function App() {
   ];
 
   const handleFocus = () => setIsDropdownOpen(true);
-
   const handleBlur = () => setTimeout(() => setIsDropdownOpen(false), 200);
 
   const handlePageClick = (page) => {
@@ -182,7 +188,28 @@ function App() {
   return (
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
-        <div className="background-layer" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        
+        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ З БЕЙДЖИКОМ */}
+        <div 
+          className="background-layer home-part-1" 
+          style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}
+        >
+          {/* Бейджик, дівчинка, текст */}
+          <img src={badgeImage} alt="Contact Badge" className="contact-badge-style" />
+          <img src={girlFlowersImage} alt="Girl with flowers" className="girl-flowers-style" />
+          <div className="pink-text-style">
+            Young coder blending creativity,<br />
+            crafting digital dreams with<br />
+            passion and playful vibes every<br />
+            step of the way.
+          </div>
+        </div>
+
+        {/* ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ З VIKA, ПОШУК, ІКОНКИ */}
+        <div 
+          className="background-layer home-part-2" 
+          style={{ backgroundImage: `url(${mobileHomePart2Bg})` }}
+        >
           <div className="search-container">
             <div className="search-wrapper">
               <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -209,15 +236,18 @@ function App() {
               </div>
             )}
           </div>
+          
           <div className="social-icons-container">
             <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
             <img src={instagramIcon} alt="Instagram" className="social-icon social-instagram" onClick={() => handleSocialClick('instagram')} />
             <img src={whatsappIcon} alt="WhatsApp" className="social-icon social-whatsapp" onClick={() => handleSocialClick('whatsapp')} />
           </div>
+
           <img src={photo3} alt="Photo 3" className="my-photo photo-left" />
           <img src={photo2} alt="Photo 2" className="my-photo photo-center" />
           <img src={photo1} alt="Photo 1" className="my-photo photo-right" />
         </div>
+
       </section>
 
       <section id="about" className="page-section section-about">
