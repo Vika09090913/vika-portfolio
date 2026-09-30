@@ -26,12 +26,8 @@ import musicRibbon from './images/music-ribbon.png';
 import newCharacterImage from './images/new-character.png';
 
 // Фони для мобільної версії (перший - рожевий, другий - бежевий)
-import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg'; // Рожеве з бейджиком
+import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg'; // Рожеве
 import mobileHomePart2Bg from './images/mobile-home-part2-bg.jpg'; // Бежеве з VIKA
-
-// Елементи для першої частини (рожевої)
-import badgeImage from './images/badge.png';
-import girlFlowersImage from './images/girl-flowers.png';
 
 function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -189,14 +185,12 @@ function App() {
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
         
-        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ З БЕЙДЖИКОМ */}
+        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ */}
         <div 
           className="background-layer home-part-1" 
           style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}
         >
-          {/* Бейджик, дівчинка, текст */}
-          <img src={badgeImage} alt="Contact Badge" className="contact-badge-style" />
-          <img src={girlFlowersImage} alt="Girl with flowers" className="girl-flowers-style" />
+          {/* Картинки прибрано, залишили тільки текст */}
           <div className="pink-text-style">
             Young coder blending creativity,<br />
             crafting digital dreams with<br />
