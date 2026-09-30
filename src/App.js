@@ -25,9 +25,9 @@ import musicVinyl from './images/music-vinyl.png';
 import musicRibbon from './images/music-ribbon.png';
 import newCharacterImage from './images/new-character.png';
 
-// Фони для мобільної версії (перший - рожевий, другий - бежевий)
-import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg'; // Рожеве
-import mobileHomePart2Bg from './images/mobile-home-part2-bg.jpg'; // Бежеве з VIKA
+// Фони для мобільної версії
+import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg';
+import mobileHomePart2Bg from './images/mobile-home-part2-bg.jpg';
 
 function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -185,21 +185,19 @@ function App() {
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
         
-        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ */}
+        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ - ІКОНКИ СОЦМЕРЕЖ */}
         <div 
           className="background-layer home-part-1" 
           style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}
         >
-          {/* Картинки прибрано, залишили тільки текст */}
-          <div className="pink-text-style">
-            Young coder blending creativity,<br />
-            crafting digital dreams with<br />
-            passion and playful vibes every<br />
-            step of the way.
+          <div className="social-icons-container">
+            <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
+            <img src={instagramIcon} alt="Instagram" className="social-icon social-instagram" onClick={() => handleSocialClick('instagram')} />
+            <img src={whatsappIcon} alt="WhatsApp" className="social-icon social-whatsapp" onClick={() => handleSocialClick('whatsapp')} />
           </div>
         </div>
 
-        {/* ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ З VIKA, ПОШУК, ІКОНКИ */}
+        {/* ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ - ПОШУК І ФОТО */}
         <div 
           className="background-layer home-part-2" 
           style={{ backgroundImage: `url(${mobileHomePart2Bg})` }}
@@ -229,12 +227,6 @@ function App() {
                 ))}
               </div>
             )}
-          </div>
-          
-          <div className="social-icons-container">
-            <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
-            <img src={instagramIcon} alt="Instagram" className="social-icon social-instagram" onClick={() => handleSocialClick('instagram')} />
-            <img src={whatsappIcon} alt="WhatsApp" className="social-icon social-whatsapp" onClick={() => handleSocialClick('whatsapp')} />
           </div>
 
           <img src={photo3} alt="Photo 3" className="my-photo photo-left" />

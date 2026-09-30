@@ -1143,7 +1143,6 @@ html {
   /* --- НАЛАШТУВАННЯ СЕКЦІЇ HOME --- */
   .section-home {
     height: 200vh !important;
-    /* Подвійна висота для двох частин */
     overflow-y: auto !important;
     overflow-x: hidden !important;
     position: relative;
@@ -1157,7 +1156,7 @@ html {
     background: transparent !important;
   }
 
-  /* --- ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ З БЕЙДЖИКОМ --- */
+  /* --- ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ - ІКОНКИ СОЦМЕРЕЖ --- */
   .home-part-1 {
     position: absolute;
     top: 0;
@@ -1169,43 +1168,33 @@ html {
     z-index: 10;
   }
 
-  /* Елементи першої частини */
-  .contact-badge-style {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    max-width: 300px;
-    z-index: 20;
+  /* Іконки соцмереж на ПЕРШОМУ екрані */
+  .social-icon {
+    width: 60px !important;
+    height: 60px !important;
   }
 
-  .girl-flowers-style {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    width: 120px;
-    z-index: 20;
+  .social-snapchat {
+    top: 20% !important;
+    left: 15% !important;
   }
 
-  .pink-text-style {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-    width: 55%;
-    font-family: 'Brush Script MT', cursive;
-    color: #ff69b4;
-    font-size: 16px;
-    text-align: right;
-    line-height: 1.4;
-    z-index: 20;
+  .social-instagram {
+    top: 20% !important;
+    right: 15% !important;
+    left: auto !important;
   }
 
-  /* --- ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ З VIKA, ПОШУК, ІКОНКИ --- */
+  .social-whatsapp {
+    top: 35% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* --- ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ - ПОШУК І ФОТО --- */
   .home-part-2 {
     position: absolute;
     top: 100vh;
-    /* Починається після першої частини */
     left: 0;
     width: 100%;
     height: 100vh;
@@ -1214,7 +1203,7 @@ html {
     z-index: 10;
   }
 
-  /* Пошук фіксований зверху (але візуально він буде на другій частині при скролі) */
+  /* Пошук фіксований зверху */
   .search-container {
     position: fixed !important;
     top: 15px !important;
@@ -1223,29 +1212,6 @@ html {
     width: 85% !important;
     max-width: 320px !important;
     z-index: 1000 !important;
-  }
-
-  /* Іконки соцмереж на другій частині */
-  .social-icon {
-    width: 50px !important;
-    height: 50px !important;
-  }
-
-  .social-snapchat {
-    top: 80px !important;
-    left: 10% !important;
-  }
-
-  .social-instagram {
-    top: 80px !important;
-    right: 10% !important;
-    left: auto !important;
-  }
-
-  .social-whatsapp {
-    top: 140px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
   }
 
   /* Фото з обличчями на другій частині */
@@ -1428,34 +1394,6 @@ html {
 
   .footer-socials {
     justify-content: center;
-  }
-
-  .background-layer::after,
-  .about-background-layer::after {
-    content: '← Swipe →';
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: rgba(255, 105, 180, 0.6);
-    z-index: 100;
-    animation: swipeHint 2s ease-in-out infinite;
-    pointer-events: none;
-  }
-
-  @keyframes swipeHint {
-
-    0%,
-    100% {
-      opacity: 0.4;
-      transform: translateX(-50%);
-    }
-
-    50% {
-      opacity: 1;
-      transform: translateX(-40%);
-    }
   }
 }
 
