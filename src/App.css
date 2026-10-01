@@ -1018,24 +1018,36 @@ html {
     z-index: 10;
   }
 
-  /* Іконки соцмереж на ПЕРШОМУ екрані (рожевому) */
+  /* Іконки соцмереж в РЯДОК зверху на першому екрані */
+  .home-part-1 .social-icons-container {
+    position: absolute !important;
+    top: 10px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px !important;
+    z-index: 50 !important;
+    pointer-events: none !important;
+  }
+
   .home-part-1 .social-icon {
-    width: 60px !important;
-    height: 60px !important;
+    position: static !important;
+    width: 50px !important;
+    height: 50px !important;
+    transform: none !important;
+    pointer-events: auto !important;
   }
-  .home-part-1 .social-snapchat {
-    top: 20% !important;
-    left: 15% !important;
-  }
-  .home-part-1 .social-instagram {
-    top: 20% !important;
-    right: 15% !important;
-    left: auto !important;
-  }
+
+  .home-part-1 .social-snapchat,
+  .home-part-1 .social-instagram,
   .home-part-1 .social-whatsapp {
-    top: 35% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
   }
 
   /* --- ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ - ПОШУК І ФОТО --- */

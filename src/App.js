@@ -24,8 +24,6 @@ import musicBackground from './images/music-background.jpg';
 import musicVinyl from './images/music-vinyl.png';
 import musicRibbon from './images/music-ribbon.png';
 import newCharacterImage from './images/new-character.png';
-
-// Фони для мобільної версії
 import mobileHomePart1Bg from './images/mobile-home-part1-bg.jpg';
 import mobileHomePart2Bg from './images/mobile-home-part2-bg.jpg';
 
