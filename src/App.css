@@ -1028,25 +1028,26 @@ html {
     z-index: 1000 !important;
   }
 
-  /* Іконки соцмереж в РЯДОК на першому екрані */
+  /* Іконки соцмереж в РЯДОК на першому екрані - менші, вище, правіше */
   .home-part-1 .social-icons-container {
     position: absolute !important;
-    top: 100px !important;
+    top: 85px !important; /* Вище (було 100px) */
     left: 0 !important;
     width: 100% !important;
     height: auto !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 20px !important;
+    gap: 15px !important; /* Менший відступ */
+    padding-right: 30px !important; /* Зсув вправо */
     z-index: 50 !important;
     pointer-events: none !important;
   }
 
   .home-part-1 .social-icon {
     position: static !important;
-    width: 65px !important;
-    height: 65px !important;
+    width: 55px !important; /* Менші (було 65px) */
+    height: 55px !important;
     transform: none !important;
     pointer-events: auto !important;
   }
@@ -1072,26 +1073,26 @@ html {
     z-index: 10;
   }
 
-  /* Фото з обличчями БІЛЬШІ */
+  /* Фото з обличчями БІЛЬШІ та ПРАВІШЕ */
   .my-photo { width: auto !important; height: auto !important; }
   .photo-left {
-    width: 160px !important;
-    height: 180px !important;
+    width: 180px !important; /* Ширша (було 160px) */
+    height: 200px !important;
     top: 15% !important;
-    left: 5% !important;
+    left: 10% !important; /* Правіше (було 5%) */
   }
   .photo-center {
-    width: 150px !important;
-    height: 170px !important;
+    width: 170px !important; /* Ширша (було 150px) */
+    height: 190px !important;
     top: 12% !important;
-    left: 50% !important;
+    left: 55% !important; /* Правіше (було 50%) */
     transform: translateX(-50%) rotate(10deg) !important;
   }
   .photo-right {
-    width: 150px !important;
-    height: 170px !important;
+    width: 170px !important; /* Ширша (було 150px) */
+    height: 190px !important;
     top: 15% !important;
-    right: 5% !important;
+    right: 2% !important; /* Правіше (було 5%) */
     left: auto !important;
   }
 
