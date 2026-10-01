@@ -169,7 +169,6 @@ html {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -239,45 +238,37 @@ html {
     left: 45%;
     width: 170px;
   }
-
   .photo-center {
     top: 2%;
     left: 58%;
     width: 180px;
   }
-
   .photo-right {
     top: 5%;
     left: 70%;
     width: 210px;
   }
-
   .search-container {
     top: 20px;
     left: 400px;
     width: 280px;
   }
-
   .social-icon {
     width: 65px;
     height: 65px;
   }
-
   .social-snapchat {
     top: 100px;
     left: 150px;
   }
-
   .social-instagram {
     top: 180px;
     left: 260px;
   }
-
   .social-whatsapp {
     top: 260px;
     left: 350px;
   }
-
   .about-photo-container {
     width: 450px;
     height: 500px;
@@ -322,27 +313,11 @@ html {
 }
 
 @keyframes heartBeatAnimation {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(1.3);
-  }
-
-  20% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.3);
-  }
-
-  40% {
-    transform: scale(1);
-  }
+  0%, 100% { transform: scale(1); }
+  10% { transform: scale(1.3); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.3); }
+  40% { transform: scale(1); }
 }
 
 .heart-emoji {
@@ -364,27 +339,11 @@ html {
 }
 
 @keyframes heartBeat {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  10% {
-    transform: scale(1.2);
-  }
-
-  20% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.2);
-  }
-
-  40% {
-    transform: scale(1);
-  }
+  0%, 100% { transform: scale(1); }
+  10% { transform: scale(1.2); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.2); }
+  40% { transform: scale(1); }
 }
 
 .tweety-popup {
@@ -409,7 +368,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -417,15 +375,8 @@ html {
 }
 
 @keyframes tweetyFloat {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
 
 @media (max-width: 1024px) {
@@ -434,7 +385,6 @@ html {
     left: 100px;
     font-size: 32px;
   }
-
   .tweety-image {
     width: 250px;
   }
@@ -487,7 +437,6 @@ html {
     transform: scale(0.8) rotate(5deg);
     opacity: 0;
   }
-
   to {
     transform: scale(1) rotate(0deg);
     opacity: 1;
@@ -512,7 +461,6 @@ html {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -579,26 +527,22 @@ html {
 }
 
 @media (max-width: 1024px) {
-
   .envelope-closed,
   .envelope-opened {
     bottom: 80px;
     right: 80px;
     width: 400px;
   }
-
   .hobby-card {
     bottom: 80px;
     right: 80px;
     width: 400px;
   }
-
   .hobby-nav-btn {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-
   .hobby-indicator {
     bottom: 50px;
     right: 80px;
@@ -674,7 +618,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.9);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -694,15 +637,8 @@ html {
 }
 
 @keyframes hintPulse {
-
-  0%,
-  100% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 1;
-  }
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
 .section-music {
@@ -820,32 +756,19 @@ html {
   .music-vinyl-container {
     width: 600px;
   }
-
   .music-ribbon-container {
     height: 200px;
   }
-
   .music-playlist {
     gap: 20px;
     padding: 15px 20px;
   }
-
   .music-song {
     padding: 12px 18px;
   }
-
-  .song-number {
-    font-size: 20px;
-    min-width: 35px;
-  }
-
-  .song-title {
-    font-size: 16px;
-  }
-
-  .song-artist {
-    font-size: 14px;
-  }
+  .song-number { font-size: 20px; min-width: 35px; }
+  .song-title { font-size: 16px; }
+  .song-artist { font-size: 14px; }
 }
 
 .character-trigger {
@@ -865,15 +788,8 @@ html {
 }
 
 @keyframes characterPulse {
-
-  0%,
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-
-  50% {
-    transform: scale(1.15) rotate(10deg);
-  }
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(10deg); }
 }
 
 .new-character-popup {
@@ -898,7 +814,6 @@ html {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3) rotate(-180deg);
   }
-
   to {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -906,19 +821,9 @@ html {
 }
 
 @keyframes newCharacterFloat {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  25% {
-    transform: translateY(-15px) rotate(-5deg);
-  }
-
-  75% {
-    transform: translateY(-15px) rotate(5deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-15px) rotate(-5deg); }
+  75% { transform: translateY(-15px) rotate(5deg); }
 }
 
 .site-footer {
@@ -949,15 +854,8 @@ html {
 }
 
 @keyframes floatHeart {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0deg);
-  }
-
-  50% {
-    transform: translateY(-10px) rotate(10deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(10deg); }
 }
 
 .footer-content {
@@ -995,15 +893,8 @@ html {
 }
 
 @keyframes bearBounce {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(-5deg);
-  }
-
-  50% {
-    transform: translateY(-8px) rotate(-5deg);
-  }
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-8px) rotate(-5deg); }
 }
 
 .heart-emoji {
@@ -1011,15 +902,8 @@ html {
 }
 
 @keyframes heartPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }
 
 .footer-text {
@@ -1041,15 +925,8 @@ html {
 }
 
 @keyframes footerHeartPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.3);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
 }
 
 .footer-copy {
@@ -1093,45 +970,18 @@ html {
   .new-character-image {
     width: 200px;
   }
-
   .footer-content {
     flex-direction: column;
     gap: 20px;
   }
-
-  .footer-emojis {
-    order: 1;
-  }
-
-  .footer-text {
-    order: 2;
-  }
-
-  .footer-socials {
-    order: 3;
-  }
-
-  .footer-emoji {
-    font-size: 35px;
-  }
-
-  .footer-made {
-    font-size: 14px;
-  }
-
-  .footer-copy {
-    font-size: 11px;
-  }
-
-  .footer-social-link {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer-social-link img {
-    width: 24px;
-    height: 24px;
-  }
+  .footer-emojis { order: 1; }
+  .footer-text { order: 2; }
+  .footer-socials { order: 3; }
+  .footer-emoji { font-size: 35px; }
+  .footer-made { font-size: 14px; }
+  .footer-copy { font-size: 11px; }
+  .footer-social-link { width: 40px; height: 40px; }
+  .footer-social-link img { width: 24px; height: 24px; }
 }
 
 /* ============================================
@@ -1139,7 +989,7 @@ html {
    ============================================ */
 
 @media (max-width: 768px) {
-
+  
   .section-home {
     height: 200vh !important;
     overflow-y: auto !important;
@@ -1181,17 +1031,14 @@ html {
   .home-part-1 .social-icons-container {
     position: absolute !important;
     top: 70px !important;
-    /* Ще вище (було 85px) */
     left: 0 !important;
     width: 100% !important;
     height: auto !important;
     display: flex !important;
     justify-content: flex-end !important;
-    /* Вирівнювання вправо */
     align-items: center !important;
     gap: 10px !important;
     padding-right: 10px !important;
-    /* Майже до куточка */
     z-index: 50 !important;
     pointer-events: none !important;
   }
@@ -1225,38 +1072,26 @@ html {
     z-index: 10;
   }
 
-  /* Фото з обличчями - МЕНШІ та РОЗСУНУТІ */
-  .my-photo {
-    width: auto !important;
-    height: auto !important;
-  }
-
+  /* Фото з обличчями - ще трохи ПРАВІШЕ та ВИЩЕ */
+  .my-photo { width: auto !important; height: auto !important; }
   .photo-left {
     width: 150px !important;
-    /* Менша (було 180px) */
     height: 170px !important;
-    top: 18% !important;
-    left: 5% !important;
-    /* Ліворуч */
+    top: 12% !important; /* Вище (було 18%) */
+    left: 12% !important; /* Правіше (було 5%) */
   }
-
   .photo-center {
     width: 140px !important;
-    /* Менша (було 170px) */
     height: 160px !important;
-    top: 15% !important;
-    left: 50% !important;
-    /* По центру */
+    top: 9% !important; /* Вище (було 15%) */
+    left: 55% !important; /* Правіше (було 50%) */
     transform: translateX(-50%) rotate(10deg) !important;
   }
-
   .photo-right {
     width: 150px !important;
-    /* Менша (було 170px) */
     height: 170px !important;
-    top: 18% !important;
-    right: 5% !important;
-    /* Праворуч */
+    top: 12% !important; /* Вище (було 18%) */
+    right: 2% !important; /* Правіше (було 5%) */
     left: auto !important;
   }
 
@@ -1265,26 +1100,22 @@ html {
     overflow-x: auto !important;
     overflow-y: hidden !important;
   }
-
   .about-background-layer {
     width: 1400px !important;
     min-height: 100vh !important;
   }
-
   .about-photo-container {
     width: 650px !important;
     height: 700px !important;
     top: -120px !important;
     left: 10px !important;
   }
-
   .heart-emoji {
     font-size: 36px !important;
     bottom: 150px !important;
     left: 700px !important;
     top: auto !important;
   }
-
   .character-trigger {
     display: block !important;
     font-size: 36px !important;
@@ -1298,25 +1129,21 @@ html {
     width: 400px !important;
     bottom: 100px !important;
   }
-
   .hobby-card {
     width: 400px !important;
     right: 50px !important;
     bottom: 100px !important;
     left: auto !important;
   }
-
   .hobby-image {
     width: 100% !important;
     max-width: 400px !important;
   }
-
   .hobby-nav-btn {
     width: 60px !important;
     height: 60px !important;
     font-size: 2rem !important;
   }
-
   .hobby-indicator {
     bottom: 60px !important;
     right: 50px !important;
@@ -1329,11 +1156,9 @@ html {
     top: 30px !important;
     left: 30px !important;
   }
-
   .skills-buttons {
     display: none !important;
   }
-
   .skills-composite {
     width: 70% !important;
     height: auto !important;
@@ -1346,7 +1171,6 @@ html {
     width: 350px !important;
     top: 45% !important;
   }
-
   .music-ribbon-container {
     bottom: -120px !important;
     left: 0;
@@ -1354,7 +1178,6 @@ html {
     height: 220px !important;
     z-index: 20;
   }
-
   .music-ribbon {
     width: 100% !important;
     height: 100% !important;
@@ -1362,7 +1185,6 @@ html {
     opacity: 1 !important;
     object-fit: cover !important;
   }
-
   .music-playlist {
     width: 95% !important;
     left: 50% !important;
@@ -1375,79 +1197,36 @@ html {
     padding: 10px !important;
     max-width: 600px !important;
   }
-
   .music-song {
     width: auto !important;
     min-width: auto !important;
     padding: 10px 12px !important;
     background: transparent !important;
   }
-
   .music-song.active {
     background: rgba(255, 255, 255, 0.35) !important;
     border: 2px solid rgba(255, 255, 255, 0.6) !important;
   }
+  .song-number { font-size: 14px !important; min-width: 25px !important; }
+  .song-title { font-size: 12px !important; }
+  .song-artist { font-size: 10px !important; }
 
-  .song-number {
-    font-size: 14px !important;
-    min-width: 25px !important;
-  }
-
-  .song-title {
-    font-size: 12px !important;
-  }
-
-  .song-artist {
-    font-size: 10px !important;
-  }
-
-  .footer-content {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .footer-emojis {
-    justify-content: center;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
+  .footer-content { flex-direction: column !important; text-align: center; }
+  .footer-emojis { justify-content: center; }
+  .footer-socials { justify-content: center; }
 }
 
 @media (max-width: 400px) {
-  .skills-bear {
-    width: 80px !important;
-  }
-
-  .skills-buttons {
-    display: none !important;
-  }
-
-  .music-vinyl-container {
-    width: 280px !important;
-  }
-
-  .music-ribbon-container {
-    height: 180px !important;
-    bottom: -100px !important;
-  }
-
+  .skills-bear { width: 80px !important; }
+  .skills-buttons { display: none !important; }
+  .music-vinyl-container { width: 280px !important; }
+  .music-ribbon-container { height: 180px !important; bottom: -100px !important; }
   .music-playlist {
     gap: 8px !important;
     padding: 8px !important;
     top: 25% !important;
   }
-
-  .song-number {
-    font-size: 12px !important;
-  }
-
-  .song-title {
-    font-size: 10px !important;
-  }
-
-  .song-artist {
-    font-size: 9px !important;
-  }
+  .song-number { font-size: 12px !important; }
+  .song-title { font-size: 10px !important; }
+  .song-artist { font-size: 9px !important; }
 }
