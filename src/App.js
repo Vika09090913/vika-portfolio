@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import backgroundImage from './images/background.jpg';
 import aboutBackground from './images/about-background.jpg';
+import aboutMobileBg from './images/about-mobile-bg.jpg'; // НОВИЙ ФОН ДЛЯ МОБІЛЬНОГО
 import aboutPhoto from './images/about-photo.jpg';
 import photo1 from './images/photo1.jpg';
 import photo2 from './images/photo2.jpg';
@@ -184,7 +185,7 @@ function App() {
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
         
-        {/* ДЕСКТОП ВЕРСІЯ - один блок з background.jpg */}
+        {/* ДЕСКТОП ВЕРСІЯ */}
         <div className="background-layer desktop-home" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="search-container">
             <div className="search-wrapper">

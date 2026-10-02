@@ -1035,7 +1035,6 @@ html {
     z-index: 10;
   }
 
-  /* Пошук на ПЕРШОМУ екрані */
   .search-container {
     position: fixed !important;
     top: 15px !important;
@@ -1046,7 +1045,6 @@ html {
     z-index: 1000 !important;
   }
 
-  /* Іконки соцмереж - ВИЩЕ і ПРАВІШЕ (майже до куточка) */
   .home-part-1 .social-icons-container {
     position: absolute !important;
     top: 70px !important;
@@ -1091,7 +1089,6 @@ html {
     z-index: 10;
   }
 
-  /* Фото з обличчями - ще трохи ПРАВІШЕ та ВИЩЕ */
   .my-photo { width: auto !important; height: auto !important; }
   .photo-left {
     width: 150px !important;
@@ -1114,7 +1111,7 @@ html {
     left: auto !important;
   }
 
-  /* --- ІНШІ СЕКЦІ --- */
+  /* --- ABOUT ME МОБІЛЬНА ВЕРСІЯ --- */
   .section-about {
     overflow-x: auto !important;
     overflow-y: hidden !important;
@@ -1122,17 +1119,19 @@ html {
   .about-background-layer {
     width: 1400px !important;
     min-height: 100vh !important;
+    background-image: url('./images/about-mobile-bg.jpg') !important; /* НОВИЙ ФОН */
   }
   .about-photo-container {
-    width: 650px !important;
-    height: 700px !important;
-    top: -120px !important;
+    width: 450px !important; /* ЗМЕНШЕНО (було 650px) */
+    height: 500px !important; /* ЗМЕНШЕНО (було 700px) */
+    top: -80px !important;
     left: 10px !important;
   }
+  /* Сердечко підсунуто ближче до повідомлення */
   .heart-emoji {
     font-size: 36px !important;
-    bottom: 150px !important;
-    left: 700px !important;
+    bottom: 100px !important; /* Вище (було 150px) */
+    left: 600px !important; /* Лівіше (було 700px) */
     top: auto !important;
   }
   .character-trigger {
@@ -1142,6 +1141,7 @@ html {
     right: 180px !important;
   }
 
+  /* --- HOBBIES --- */
   .envelope-closed,
   .envelope-opened {
     right: 50px !important;
@@ -1170,6 +1170,7 @@ html {
     transform: none !important;
   }
 
+  /* --- SKILLS --- */
   .skills-bear {
     width: 150px !important;
     top: 30px !important;
@@ -1186,6 +1187,7 @@ html {
     transform: translate(-50%, -50%) !important;
   }
 
+  /* --- MUSIC --- */
   .music-vinyl-container {
     width: 350px !important;
     top: 45% !important;
@@ -1248,4 +1250,8 @@ html {
   .song-number { font-size: 12px !important; }
   .song-title { font-size: 10px !important; }
   .song-artist { font-size: 9px !important; }
+  .about-photo-container {
+    width: 350px !important;
+    height: 400px !important;
+  }
 }
