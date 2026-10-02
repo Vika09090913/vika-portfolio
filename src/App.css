@@ -1111,27 +1111,27 @@ html {
     left: auto !important;
   }
 
-  /* --- ABOUT ME МОБІЛЬНА ВЕРСІЯ --- */
+  /* --- ABOUT ME МОБІЛЬНА ВЕРСІЯ - БЕЗ ГОРИЗОНТАЛЬНОГО СКРОЛУ --- */
   .section-about {
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
+    overflow: hidden !important; /* Прибрано горизонтальний скрол */
   }
   .about-background-layer {
-    width: 1400px !important;
+    width: 100% !important; /* Залишаємо 100%, не 1400px */
     min-height: 100vh !important;
-    background-image: url('./images/about-mobile-bg.jpg') !important; /* НОВИЙ ФОН */
+    background-image: url('./images/about-mobile-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
   .about-photo-container {
-    width: 450px !important; /* ЗМЕНШЕНО (було 650px) */
-    height: 500px !important; /* ЗМЕНШЕНО (було 700px) */
+    width: 450px !important;
+    height: 500px !important;
     top: -80px !important;
     left: 10px !important;
   }
-  /* Сердечко підсунуто ближче до повідомлення */
   .heart-emoji {
     font-size: 36px !important;
-    bottom: 100px !important; /* Вище (було 150px) */
-    left: 600px !important; /* Лівіше (було 700px) */
+    bottom: 100px !important;
+    left: 600px !important;
     top: auto !important;
   }
   .character-trigger {
