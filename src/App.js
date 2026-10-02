@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
+import backgroundImage from './images/background.jpg';
 import aboutBackground from './images/about-background.jpg';
 import aboutPhoto from './images/about-photo.jpg';
 import photo1 from './images/photo1.jpg';
@@ -183,11 +184,48 @@ function App() {
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
         
-        {/* ЧАСТИНА 1 (ПЕРША): РОЖЕВЕ - ІКОНКИ СОЦМЕРЕЖ */}
-        <div 
-          className="background-layer home-part-1" 
-          style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}
-        >
+        {/* ДЕСКТОП ВЕРСІЯ - один блок з background.jpg */}
+        <div className="background-layer desktop-home" style={{ backgroundImage: `url(${backgroundImage})` }}>
+          <div className="search-container">
+            <div className="search-wrapper">
+              <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              <input
+                type="text"
+                className="search-input"
+                placeholder="Find page..."
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+            </div>
+            {isDropdownOpen && (
+              <div className="dropdown-list">
+                {pages.map((page, index) => (
+                  <div key={index} className="dropdown-item" onClick={() => handlePageClick(page)}>
+                    {page.name}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+          
+          <div className="social-icons-container">
+            <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
+            <img src={instagramIcon} alt="Instagram" className="social-icon social-instagram" onClick={() => handleSocialClick('instagram')} />
+            <img src={whatsappIcon} alt="WhatsApp" className="social-icon social-whatsapp" onClick={() => handleSocialClick('whatsapp')} />
+          </div>
+
+          <img src={photo3} alt="Photo 3" className="my-photo photo-left" />
+          <img src={photo2} alt="Photo 2" className="my-photo photo-center" />
+          <img src={photo1} alt="Photo 1" className="my-photo photo-right" />
+        </div>
+
+        {/* МОБІЛЬНА ВЕРСІЯ - два блоки */}
+        <div className="background-layer home-part-1" style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}>
           <div className="social-icons-container">
             <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
             <img src={instagramIcon} alt="Instagram" className="social-icon social-instagram" onClick={() => handleSocialClick('instagram')} />
@@ -195,11 +233,7 @@ function App() {
           </div>
         </div>
 
-        {/* ЧАСТИНА 2 (ДРУГА): БЕЖЕВЕ - ПОШУК І ФОТО */}
-        <div 
-          className="background-layer home-part-2" 
-          style={{ backgroundImage: `url(${mobileHomePart2Bg})` }}
-        >
+        <div className="background-layer home-part-2" style={{ backgroundImage: `url(${mobileHomePart2Bg})` }}>
           <div className="search-container">
             <div className="search-wrapper">
               <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

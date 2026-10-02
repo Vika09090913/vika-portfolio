@@ -985,11 +985,30 @@ html {
 }
 
 /* ============================================
+    ДЕСКТОП - показуємо тільки desktop-home
+   ============================================ */
+
+@media (min-width: 769px) {
+  .desktop-home {
+    display: block !important;
+  }
+  .home-part-1,
+  .home-part-2 {
+    display: none !important;
+  }
+}
+
+/* ============================================
     МОБІЛЬНА ВЕРСІЯ - РОЗДІЛЕНА ГОЛОВНА СТОРІНКА
    ============================================ */
 
 @media (max-width: 768px) {
   
+  /* Приховуємо десктопний блок на мобільному */
+  .desktop-home {
+    display: none !important;
+  }
+
   .section-home {
     height: 200vh !important;
     overflow-y: auto !important;
@@ -1077,21 +1096,21 @@ html {
   .photo-left {
     width: 150px !important;
     height: 170px !important;
-    top: 12% !important; /* Вище (було 18%) */
-    left: 12% !important; /* Правіше (було 5%) */
+    top: 12% !important;
+    left: 12% !important;
   }
   .photo-center {
     width: 140px !important;
     height: 160px !important;
-    top: 9% !important; /* Вище (було 15%) */
-    left: 55% !important; /* Правіше (було 50%) */
+    top: 9% !important;
+    left: 55% !important;
     transform: translateX(-50%) rotate(10deg) !important;
   }
   .photo-right {
     width: 150px !important;
     height: 170px !important;
-    top: 12% !important; /* Вище (було 18%) */
-    right: 2% !important; /* Правіше (було 5%) */
+    top: 12% !important;
+    right: 2% !important;
     left: auto !important;
   }
 
