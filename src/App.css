@@ -1084,31 +1084,32 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
     z-index: 10;
   }
 
-  /* Фото з обличчями - ШИРШІ та ДАЛІ одна від одної */
+  /* Фото з обличчями */
   .my-photo { width: auto !important; height: auto !important; }
   .photo-left {
-    width: 180px !important; /* Ширша (було 150px) */
+    width: 180px !important;
     height: 200px !important;
     top: 12% !important;
-    left: 2% !important; /* Далі вліво (було 12%) */
+    left: 2% !important;
   }
   .photo-center {
-    width: 170px !important; /* Ширша (було 140px) */
+    width: 170px !important;
     height: 190px !important;
     top: 9% !important;
-    left: 50% !important; /* По центру */
+    left: 50% !important;
     transform: translateX(-50%) rotate(10deg) !important;
   }
   .photo-right {
-    width: 180px !important; /* Ширша (було 150px) */
+    width: 180px !important;
     height: 200px !important;
     top: 12% !important;
-    right: 2% !important; /* Далі вправо (було 2%) */
+    right: 2% !important;
     left: auto !important;
   }
 
@@ -1120,8 +1121,9 @@ html {
     width: 100% !important;
     min-height: 100vh !important;
     background-image: url('./images/about-mobile-bg.jpg') !important;
-    background-size: cover !important;
+    background-size: contain !important;
     background-position: center !important;
+    background-repeat: no-repeat !important;
   }
   .about-photo-container {
     width: 450px !important;
@@ -1143,6 +1145,10 @@ html {
   }
 
   /* --- HOBBIES --- */
+  .hobbies-background-layer {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
   .envelope-closed,
   .envelope-opened {
     right: 50px !important;
@@ -1172,6 +1178,10 @@ html {
   }
 
   /* --- SKILLS --- */
+  .skills-background-layer {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
   .skills-bear {
     width: 150px !important;
     top: 30px !important;
@@ -1189,6 +1199,10 @@ html {
   }
 
   /* --- MUSIC --- */
+  .music-background-layer {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
   .music-vinyl-container {
     width: 350px !important;
     top: 45% !important;
