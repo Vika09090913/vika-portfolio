@@ -1004,7 +1004,6 @@ html {
 
 @media (max-width: 768px) {
   
-  /* Приховуємо десктопний блок на мобільному */
   .desktop-home {
     display: none !important;
   }
@@ -1030,8 +1029,10 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-size: cover !important;
-    background-position: center !important;
+    /* Картинка в природному розмірі, не розтягується */
+    background-size: contain !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
     z-index: 10;
   }
 
@@ -1111,12 +1112,12 @@ html {
     left: auto !important;
   }
 
-  /* --- ABOUT ME МОБІЛЬНА ВЕРСІЯ - БЕЗ ГОРИЗОНТАЛЬНОГО СКРОЛУ --- */
+  /* --- ABOUT ME МОБІЛЬНА ВЕРСІЯ --- */
   .section-about {
-    overflow: hidden !important; /* Прибрано горизонтальний скрол */
+    overflow: hidden !important;
   }
   .about-background-layer {
-    width: 100% !important; /* Залишаємо 100%, не 1400px */
+    width: 100% !important;
     min-height: 100vh !important;
     background-image: url('./images/about-mobile-bg.jpg') !important;
     background-size: cover !important;
