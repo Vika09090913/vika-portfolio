@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import backgroundImage from './images/background.jpg';
 import aboutBackground from './images/about-background.jpg';
-import aboutMobileBg from './images/about-mobile-bg.jpg'; // НОВИЙ ФОН ДЛЯ МОБІЛЬНОГО
+import aboutMobileBg from './images/about-mobile-bg.jpg';
 import aboutPhoto from './images/about-photo.jpg';
 import photo1 from './images/photo1.jpg';
 import photo2 from './images/photo2.jpg';
@@ -185,7 +185,6 @@ function App() {
     <div className="portfolio-container" onClick={handleBackgroundClick}>
       <section id="home" className="page-section section-home">
         
-        {/* ДЕСКТОП ВЕРСІЯ */}
         <div className="background-layer desktop-home" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="search-container">
             <div className="search-wrapper">
@@ -225,7 +224,6 @@ function App() {
           <img src={photo1} alt="Photo 1" className="my-photo photo-right" />
         </div>
 
-        {/* МОБІЛЬНА ВЕРСІЯ - два блоки */}
         <div className="background-layer home-part-1" style={{ backgroundImage: `url(${mobileHomePart1Bg})` }}>
           <div className="social-icons-container">
             <img src={snapchatIcon} alt="Snapchat" className="social-icon social-snapchat" onClick={() => handleSocialClick('snapchat')} />
@@ -352,7 +350,7 @@ function App() {
             <span className="footer-emoji bear-emoji" onClick={(e) => { e.stopPropagation(); handleNewCharacterClick(e); }}>🐻</span>
           </div>
           <div className="footer-text">
-            <p className="footer-made">Made with <span className="footer-heart">💕</span> by Victoria Chunikhovska</p>
+            <p className="footer-made">Made with <span className="footer-heart"></span> by Victoria Chunikhovska</p>
             <p className="footer-copy">© 2026 All rights reserved</p>
           </div>
           <div className="footer-socials">
