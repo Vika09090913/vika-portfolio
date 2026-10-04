@@ -1188,7 +1188,7 @@ html {
 
   /* --- SKILLS МОБІЛЬНА ВЕРСІЯ --- */
   .skills-bear {
-    width: 220px !important; /* ЗБІЛЬШЕНО (було 150px) */
+    width: 5000px !important; /* ЗБІЛЬШЕНО (було 150px) */
     top: 20px !important;
     left: 20px !important;
   }
@@ -1196,7 +1196,7 @@ html {
     display: none !important;
   }
   .skills-composite {
-    width: 90% !important; /* ЗБІЛЬШЕНО (було 70%) */
+    width: 95% !important; /* ЗБІЛЬШЕНО (було 70%) */
     height: auto !important;
     max-height: none !important;
     left: 50% !important;
