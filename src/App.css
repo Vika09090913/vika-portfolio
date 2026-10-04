@@ -479,10 +479,9 @@ html {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* КНОПКИ ХОББІ - МІНІМАЛІСТИЧНІ */
 .hobby-nav-btn {
   background: rgba(255, 255, 255, 0.6);
-  border: 1.5px solid rgba(255, 105, 180, 0.4);
+  border: 1.5px solid rgba(212, 165, 165, 0.5);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -492,7 +491,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ff69b4;
+  color: #d4a5a5;
   flex-shrink: 0;
   z-index: 25;
   backdrop-filter: blur(5px);
@@ -500,7 +499,7 @@ html {
 
 .hobby-nav-btn:hover {
   background: rgba(255, 255, 255, 0.85);
-  border-color: rgba(255, 105, 180, 0.7);
+  border-color: rgba(212, 165, 165, 0.8);
   transform: scale(1.05);
 }
 
@@ -1030,7 +1029,7 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-size: cover !important;
+    background-size: 100% auto !important; /* Розтягує по ширині, зберігає пропорції */
     background-position: center top !important;
     background-repeat: no-repeat !important;
     z-index: 10;
@@ -1085,7 +1084,7 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-size: cover !important;
+    background-size: 100% auto !important; /* Розтягує по ширині, зберігає пропорції */
     background-position: center !important;
     z-index: 10;
   }
@@ -1121,7 +1120,7 @@ html {
     width: 100% !important;
     min-height: 100vh !important;
     background-image: url('./images/about-mobile-bg.jpg') !important;
-    background-size: contain !important;
+    background-size: 100% auto !important; /* Розтягує по ширині, зберігає пропорції */
     background-position: center !important;
     background-repeat: no-repeat !important;
   }
@@ -1144,22 +1143,22 @@ html {
     right: 180px !important;
   }
 
-  /* --- HOBBIES МОБІЛЬНА ВЕРСІЯ - НОВИЙ ФОН --- */
+  /* --- HOBBIES МОБІЛЬНА ВЕРСІЯ --- */
   .hobbies-background-layer {
     background-image: url('./images/hobbies-mobile-bg.jpg') !important;
-    background-size: contain !important;
+    background-size: 100% auto !important; /* Розтягує по ширині, зберігає пропорції */
     background-position: center !important;
     background-repeat: no-repeat !important;
   }
   .envelope-closed,
   .envelope-opened {
-    right: 20px !important; /* ПРАВІШЕ (було 50px) */
+    right: 20px !important;
     width: 400px !important;
     bottom: 100px !important;
   }
   .hobby-card {
     width: 400px !important;
-    right: 20px !important; /* ПРАВІШЕ (було 50px) */
+    right: 20px !important;
     bottom: 100px !important;
     left: auto !important;
   }
@@ -1167,7 +1166,6 @@ html {
     width: 100% !important;
     max-width: 400px !important;
   }
-  /* МІНІМАЛІСТИЧНІ КНОПКИ НА МОБІЛЬНОМУ */
   .hobby-nav-btn {
     width: 44px !important;
     height: 44px !important;
@@ -1183,7 +1181,7 @@ html {
   }
   .hobby-indicator {
     bottom: 60px !important;
-    right: 20px !important; /* ПРАВІШЕ (було 50px) */
+    right: 20px !important;
     left: auto !important;
     transform: none !important;
   }
