@@ -479,28 +479,29 @@ html {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* КНОПКИ ХОББІ - МІНІМАЛІСТИЧНІ */
 .hobby-nav-btn {
-  background: rgba(255, 182, 193, 0.8);
-  border: none;
-  width: 60px;
-  height: 60px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(255, 105, 180, 0.4);
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
   color: #ff69b4;
   flex-shrink: 0;
   z-index: 25;
+  backdrop-filter: blur(5px);
 }
 
 .hobby-nav-btn:hover {
-  background: rgba(255, 105, 180, 0.9);
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 105, 180, 0.7);
+  transform: scale(1.05);
 }
 
 .hobby-indicator {
@@ -539,9 +540,9 @@ html {
     width: 400px;
   }
   .hobby-nav-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
   }
   .hobby-indicator {
     bottom: 50px;
@@ -1029,7 +1030,7 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-size: cover !important; /* ЗМІНЕНО: cover замість contain - білих смуг немає */
+    background-size: cover !important;
     background-position: center top !important;
     background-repeat: no-repeat !important;
     z-index: 10;
@@ -1143,20 +1144,22 @@ html {
     right: 180px !important;
   }
 
-  /* --- HOBBIES --- */
+  /* --- HOBBIES МОБІЛЬНА ВЕРСІЯ - НОВИЙ ФОН --- */
   .hobbies-background-layer {
+    background-image: url('./images/hobbies-mobile-bg.jpg') !important;
     background-size: contain !important;
+    background-position: center !important;
     background-repeat: no-repeat !important;
   }
   .envelope-closed,
   .envelope-opened {
-    right: 50px !important;
+    right: 20px !important; /* ПРАВІШЕ (було 50px) */
     width: 400px !important;
     bottom: 100px !important;
   }
   .hobby-card {
     width: 400px !important;
-    right: 50px !important;
+    right: 20px !important; /* ПРАВІШЕ (було 50px) */
     bottom: 100px !important;
     left: auto !important;
   }
@@ -1164,23 +1167,28 @@ html {
     width: 100% !important;
     max-width: 400px !important;
   }
+  /* МІНІМАЛІСТИЧНІ КНОПКИ НА МОБІЛЬНОМУ */
   .hobby-nav-btn {
-    width: 60px !important;
-    height: 60px !important;
-    font-size: 2rem !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.3rem !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border: 1.5px solid rgba(212, 165, 165, 0.5) !important;
+    color: #d4a5a5 !important;
+    backdrop-filter: blur(5px) !important;
+  }
+  .hobby-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(212, 165, 165, 0.8) !important;
   }
   .hobby-indicator {
     bottom: 60px !important;
-    right: 50px !important;
+    right: 20px !important; /* ПРАВІШЕ (було 50px) */
     left: auto !important;
     transform: none !important;
   }
 
   /* --- SKILLS --- */
-  .skills-background-layer {
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-  }
   .skills-bear {
     width: 150px !important;
     top: 30px !important;
@@ -1198,10 +1206,6 @@ html {
   }
 
   /* --- MUSIC --- */
-  .music-background-layer {
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-  }
   .music-vinyl-container {
     width: 350px !important;
     top: 45% !important;
