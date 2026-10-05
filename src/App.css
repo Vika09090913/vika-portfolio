@@ -1213,12 +1213,12 @@ html {
       overflow: visible !important;
     }
   
-    /* Диск - МАКСИМАЛЬНО ВЕЛИКИЙ */
+    /* Диск - БІЛЬШИЙ і ВИЩИЙ (видно половину) */
     .music-vinyl-container {
-      width: 4000px !important;
-      /* ЩЕ БІЛЬШЕ (було 2400px) */
-      top: 92% !important;
-      /* ЩЕ НИЖЧЕ - видно тільки верхню частину */
+      width: 1800px !important;
+      /* Більше (було 1200px) */
+      top: 55% !important;
+      /* ВИЩЕ (було 92%) - видно половину */
       left: 50% !important;
       transform: translateX(-50%) !important;
       z-index: 5 !important;
@@ -1235,7 +1235,8 @@ html {
       width: 85% !important;
       max-width: 280px !important;
       left: 50% !important;
-      top: 35% !important;
+      top: 30% !important;
+      /* Трохи вище */
       transform: translate(-50%, -50%) !important;
       display: grid !important;
       grid-template-columns: 1fr 1fr !important;
@@ -1370,13 +1371,14 @@ html {
       }
   
       .music-vinyl-container {
-        width: 250px !important;
+        width: 1500px !important;
+        top: 60% !important;
       }
   
       .music-playlist {
         gap: 8px !important;
         padding: 8px !important;
-        top: 35% !important;
+        top: 30% !important;
       }
   
       .music-song {
