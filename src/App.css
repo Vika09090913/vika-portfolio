@@ -1215,7 +1215,7 @@ html {
   
     .music-vinyl-container {
       width: 350px !important;
-      top: 15% !important;
+      top: 90% !important;
     }
   
     /* Прибираємо стрічку на мобільному */
@@ -1229,7 +1229,7 @@ html {
       width: 85% !important;
       max-width: 280px !important;
       left: 50% !important;
-      top: 30% !important;
+      top: 20% !important;
       /* Трохи вище */
       transform: translate(-50%, -50%) !important;
       display: grid !important;
