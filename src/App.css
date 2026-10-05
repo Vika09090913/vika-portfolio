@@ -1366,6 +1366,7 @@ html {
   
         .music-vinyl-container {
           width: 280px !important;
+          top: 10px;
         }
   
       .music-playlist {
