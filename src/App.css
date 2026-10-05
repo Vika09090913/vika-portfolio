@@ -1213,15 +1213,11 @@ html {
       overflow: visible !important;
     }
   
-    /* Диск - БІЛЬШИЙ і ВИЩИЙ (видно половину) */
     .music-vinyl-container {
-      width: 20px !important;
-      /* Більше (було 1200px) */
-      top: 10% !important;
-      /* ВИЩЕ (було 92%) - видно половину */
+      width: 250px !important;
+      top: 15% !important;
       left: 50% !important;
       transform: translateX(-50%) !important;
-      z-index: 5 !important;
     }
   
     /* Прибираємо стрічку на мобільному */
