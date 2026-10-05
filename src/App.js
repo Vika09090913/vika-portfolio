@@ -328,15 +328,15 @@ function App() {
           </div>
           <div className="music-ribbon-container">
             <img src={musicRibbon} alt="Ribbon" className="music-ribbon" />
-            <div className="music-playlist">
-              {songs.map((song, index) => (
-                <div key={index} className={`music-song ${currentSongIndex === index ? 'active' : ''}`} onClick={() => handleSongClick(index)}>
-                  <span className="song-number">{song.number}</span>
-                  <span className="song-title">{song.title}</span>
-                  <span className="song-artist">- {song.artist}</span>
-                </div>
-              ))}
-            </div>
+          </div>
+          <div className="music-playlist">
+            {songs.map((song, index) => (
+              <div key={index} className={`music-song ${currentSongIndex === index ? 'active' : ''}`} onClick={() => handleSongClick(index)}>
+                <span className="song-number">{song.number}</span>
+                <span className="song-title">{song.title}</span>
+                <span className="song-artist">- {song.artist}</span>
+              </div>
+            ))}
           </div>
           {currentSongIndex !== null && (
             <audio ref={audioRef} src={songs[currentSongIndex].file} onEnded={handleSongEnd} onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)} />
@@ -347,10 +347,10 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content">
           <div className="footer-emojis">
-            <span className="footer-emoji bear-emoji" onClick={(e) => { e.stopPropagation(); handleNewCharacterClick(e); }}>🐻</span>
+            <span className="footer-emoji bear-emoji" onClick={(e) => { e.stopPropagation(); handleNewCharacterClick(e); }}></span>
           </div>
           <div className="footer-text">
-            <p className="footer-made">Made with <span className="footer-heart"></span> by Victoria Chunikhovska</p>
+            <p className="footer-made">Made with <span className="footer-heart">💕</span> by Victoria Chunikhovska</p>
             <p className="footer-copy">© 2026 All rights reserved</p>
           </div>
           <div className="footer-socials">
