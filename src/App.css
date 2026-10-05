@@ -1366,14 +1366,14 @@ html {
       }
   
         .music-vinyl-container {
-          width: 1050px !important;
+          width: 850px !important;
           top: -30px;
         }
   
       .music-playlist {
         gap: 8px !important;
         padding: 8px !important;
-        top: -10% !important;
+        top: 30% !important;
       }
   
       .music-song {
