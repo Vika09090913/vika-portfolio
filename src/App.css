@@ -1213,10 +1213,10 @@ html {
     overflow: visible !important;
   }
 
-  /* Диск - БІЛЬШИЙ і трохи вище */
+  /* Диск - В 2 РАЗИ БІЛЬШИЙ і ще НИЖЧЕ (видно тільки половину) */
   .music-vinyl-container {
-    width: 450px !important;
-    top: 70% !important;
+    width: 900px !important; /* В 2 рази більше (було 450px) */
+    top: 90% !important; /* Ще нижче (було 70%) - видно тільки половину */
     left: 50% !important;
     transform: translateX(-50%) !important;
     z-index: 5 !important;
@@ -1227,28 +1227,28 @@ html {
     display: none !important;
   }
 
-  /* 4 картки з піснями - НАД диском, БІЛЬШ ВИДИМІ */
+  /* 4 картки - МЕНШІ та НИЖЧЕ */
   .music-playlist {
     position: absolute !important;
-    width: 85% !important;
-    max-width: 300px !important;
+    width: 80% !important;
+    max-width: 250px !important; /* Менші (було 300px) */
     left: 50% !important;
-    top: 20% !important;
+    top: 30% !important; /* Нижче (було 20%) */
     transform: translate(-50%, -50%) !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr !important;
-    gap: 10px !important;
-    padding: 15px !important;
+    gap: 8px !important;
+    padding: 10px !important;
     z-index: 20 !important;
   }
 
   .music-song {
     width: 100% !important;
-    padding: 12px 10px !important;
+    padding: 10px 8px !important;
     background: rgba(255, 255, 255, 0.65) !important;
     backdrop-filter: blur(10px) !important;
-    border-radius: 12px !important;
+    border-radius: 10px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -1272,20 +1272,20 @@ html {
   }
 
   .song-number { 
-    font-size: 11px !important; 
+    font-size: 10px !important;
     color: #ff69b4 !important;
     font-weight: bold !important;
-    margin-bottom: 4px !important;
+    margin-bottom: 3px !important;
   }
   .song-title { 
-    font-size: 13px !important;
+    font-size: 12px !important;
     color: #333 !important;
     font-weight: 600 !important;
     text-align: center !important;
     margin-bottom: 2px !important;
   }
   .song-artist { 
-    font-size: 11px !important;
+    font-size: 10px !important;
     color: #666 !important;
     text-align: center !important;
   }
