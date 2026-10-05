@@ -33,7 +33,7 @@ function App() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const [showTweety, setShowTweety] = useState(false);
-  const [showNewCharacter, setShowNewCharacter] = useState(false);
+  const [showNewCharacter, setShowNewCharacter] = useState(false); // Це наш стан для ведмедика/панди
   const [envelopeStage, setEnvelopeStage] = useState('closed');
   const [currentHobbyIndex, setCurrentHobbyIndex] = useState(0);
   const [skillsBgIndex, setSkillsBgIndex] = useState(0);
@@ -112,6 +112,7 @@ function App() {
     setShowTweety(true);
   };
 
+  // Ця функція вже була, вона ідеально підходить для ведмедика у футері!
   const handleNewCharacterClick = (e) => {
     e.stopPropagation();
     setShowNewCharacter(true);
@@ -264,7 +265,6 @@ function App() {
           <img src={photo2} alt="Photo 2" className="my-photo photo-center" />
           <img src={photo1} alt="Photo 1" className="my-photo photo-right" />
         </div>
-
       </section>
 
       <section id="about" className="page-section section-about">
@@ -273,14 +273,11 @@ function App() {
             <img src={aboutPhoto} alt="About Me" className="about-photo" />
           </div>
           <span className="heart-emoji" onClick={handleHeartClick}>💕</span>
+          
+          {/* Твіті залишається тут */}
           {showTweety && (
             <div className="tweety-popup">
               <img src={tweetyImage} alt="Tweety" className="tweety-image" />
-            </div>
-          )}
-          {showNewCharacter && (
-            <div className="new-character-popup">
-              <img src={newCharacterImage} alt="Character" className="new-character-image" />
             </div>
           )}
         </div>
@@ -347,7 +344,8 @@ function App() {
       <footer className="site-footer">
         <div className="footer-content">
           <div className="footer-emojis">
-            <span className="footer-emoji bear-emoji" onClick={(e) => { e.stopPropagation(); handleNewCharacterClick(e); }}></span>
+            {/* ✅ ДОДАНО ЕМОДЗІ ВЕДМЕДИКА 🐻 сюди */}
+            <span className="footer-emoji bear-emoji" onClick={(e) => { e.stopPropagation(); handleNewCharacterClick(e); }}>🐻</span>
           </div>
           <div className="footer-text">
             <p className="footer-made">Made with <span className="footer-heart">💕</span> by Victoria Chunikhovska</p>
@@ -360,6 +358,13 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {showNewCharacter && (
+        <div className="new-character-popup show" onClick={(e) => { e.stopPropagation(); setShowNewCharacter(false); }}>
+          <img src={newCharacterImage} alt="Panda" className="new-character-image" />
+        </div>
+      )}
+
     </div>
   );
 }

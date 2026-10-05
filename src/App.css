@@ -504,23 +504,7 @@ html {
   to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
-.skills-background-layer::after {
-  content: 'Натисни на ведмедика ';
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  color: rgba(255, 105, 180, 0.6);
-  z-index: 10;
-  animation: hintPulse 2s ease-in-out infinite;
-}
-
-@keyframes hintPulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
-}
+/* ✅ Прибрано текст "Натисни на ведмедика" */
 
 .section-music { overflow: hidden; position: relative; }
 
@@ -647,6 +631,11 @@ html {
   z-index: 1001;
   animation: newCharacterAppear 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   cursor: pointer;
+  display: none;
+}
+
+.new-character-popup.show {
+  display: block;
 }
 
 .new-character-image {
@@ -677,7 +666,7 @@ html {
 
 .site-footer::before,
 .site-footer::after {
-  content: '💗';
+  content: '';
   position: absolute;
   font-size: 40px;
   opacity: 0.3;
@@ -894,7 +883,6 @@ html {
   .hobby-nav-btn:hover { background: rgba(255, 255, 255, 0.9) !important; border-color: rgba(212, 165, 165, 0.8) !important; }
   .hobby-indicator { bottom: 60px !important; right: 20px !important; left: auto !important; transform: none !important; }
 
-  /* ✅ SKILLS MOBILE — ведмедик тепер видимий */
   .section-skills { overflow: visible !important; }
   .skills-bear { width: 220px !important; top: 20px !important; left: 20px !important; }
   .skills-buttons { display: none !important; }
