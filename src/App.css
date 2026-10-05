@@ -910,7 +910,7 @@ html {
     transform: translate(-50%, -50%) !important;
   }
 
-  /* ✅ MUSIC MOBILE — диск опущений майже до низу */
+  /* ✅ MUSIC MOBILE — диск більший і видно тільки половину */
   .music-background-layer {
     background-image: url('./images/music-mobile-bg.jpg') !important;
     background-size: cover !important;
@@ -919,9 +919,9 @@ html {
     overflow: visible !important;
   }
   .music-vinyl-container {
-    width: 320px !important;
-    height: 320px !important;
-    top: 80% !important;   /* ⬇️ опускаємо майже до низу */
+    width: 380px !important;   /* ⬆️ збільшили з 320px */
+    height: 380px !important;
+    top: 92% !important;       /* ⬇️ опускаємо — видно тільки верхню половину */
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
@@ -997,9 +997,9 @@ html {
   .skills-bear { width: 80px !important; }
   .skills-buttons { display: none !important; }
   .music-vinyl-container {
-    width: 280px !important;
-    height: 280px !important;
-    top: 85% !important;   /* ⬇️ на маленьких екранах ще нижче */
+    width: 340px !important;   /* ⬆️ збільшили з 280px */
+    height: 340px !important;
+    top: 95% !important;       /* ⬇️ ще нижче на маленьких екранах */
   }
   .music-playlist { gap: 8px !important; padding: 8px !important; top: 22% !important; }
   .music-song { padding: 10px 8px !important; }
