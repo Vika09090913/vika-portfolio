@@ -1215,9 +1215,9 @@ html {
   
     /* Диск - БІЛЬШИЙ і ВИЩИЙ (видно половину) */
     .music-vinyl-container {
-      width: -20px !important;
+      width: 20px !important;
       /* Більше (було 1200px) */
-      top: -20% !important;
+      top: 10% !important;
       /* ВИЩЕ (було 92%) - видно половину */
       left: 50% !important;
       transform: translateX(-50%) !important;
