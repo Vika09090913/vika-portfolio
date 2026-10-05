@@ -1214,8 +1214,8 @@ html {
     }
   
     .music-vinyl-container {
-      width: 650px !important;
-      height: 650px !important;
+      width: 1050px !important;
+      height: 1050px !important;
       top: 78% !important;
     }
   
@@ -1366,14 +1366,14 @@ html {
       }
   
         .music-vinyl-container {
-          width: 280px !important;
+          width: 1050px !important;
           top: -30px;
         }
   
       .music-playlist {
         gap: 8px !important;
         padding: 8px !important;
-        top: 30% !important;
+        top: -10% !important;
       }
   
       .music-song {
