@@ -1213,12 +1213,12 @@ html {
       overflow: visible !important;
     }
   
-    /* Диск - ЩЕ БІЛЬШИЙ (в 2 рази) */
+    /* Диск - МАКСИМАЛЬНО ВЕЛИКИЙ */
     .music-vinyl-container {
-      width: 2400px !important;
-      /* В 2 рази більше (було 1200px) */
-      top: 85% !important;
-      /* Трохи нижче щоб видно було половину */
+      width: 4000px !important;
+      /* ЩЕ БІЛЬШЕ (було 2400px) */
+      top: 92% !important;
+      /* ЩЕ НИЖЧЕ - видно тільки верхню частину */
       left: 50% !important;
       transform: translateX(-50%) !important;
       z-index: 5 !important;
@@ -1229,14 +1229,13 @@ html {
       display: none !important;
     }
   
-    /* 4 красиві картки з піснями - ВИЩЕ */
+    /* 4 красиві картки з піснями */
     .music-playlist {
       position: absolute !important;
       width: 85% !important;
       max-width: 280px !important;
       left: 50% !important;
       top: 35% !important;
-      /* ВИЩЕ (було 45%) */
       transform: translate(-50%, -50%) !important;
       display: grid !important;
       grid-template-columns: 1fr 1fr !important;
@@ -1268,7 +1267,6 @@ html {
       overflow: hidden !important;
     }
   
-    /* Рожевий акцент зверху картки */
     .music-song::before {
       content: '♪' !important;
       position: absolute !important;
@@ -1379,7 +1377,6 @@ html {
         gap: 8px !important;
         padding: 8px !important;
         top: 35% !important;
-        /* Теж вище */
       }
   
       .music-song {
