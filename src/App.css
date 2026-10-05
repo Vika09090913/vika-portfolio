@@ -245,7 +245,6 @@ html {
   letter-spacing: 2px;
 }
 
-/* ✅ ВИПРАВЛЕНО: один .heart-emoji замість двох конфліктних */
 .heart-emoji {
   position: absolute;
   bottom: 100px;
@@ -911,7 +910,7 @@ html {
     transform: translate(-50%, -50%) !important;
   }
 
-  /* ✅ MUSIC MOBILE — тепер без вкладеного @media! */
+  /* ✅ MUSIC MOBILE — диск опущений нижче */
   .music-background-layer {
     background-image: url('./images/music-mobile-bg.jpg') !important;
     background-size: cover !important;
@@ -922,7 +921,7 @@ html {
   .music-vinyl-container {
     width: 320px !important;
     height: 320px !important;
-    top: 50% !important;
+    top: 58% !important;   /* ⬇️ опустили диск нижче */
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
@@ -997,7 +996,11 @@ html {
 @media (max-width: 400px) {
   .skills-bear { width: 80px !important; }
   .skills-buttons { display: none !important; }
-  .music-vinyl-container { width: 280px !important; height: 280px !important; }
+  .music-vinyl-container {
+    width: 280px !important;
+    height: 280px !important;
+    top: 60% !important;   /* ⬇️ на дуже маленьких екранах ще трохи нижче */
+  }
   .music-playlist { gap: 8px !important; padding: 8px !important; top: 22% !important; }
   .music-song { padding: 10px 8px !important; }
   .song-number { font-size: 9px !important; }
